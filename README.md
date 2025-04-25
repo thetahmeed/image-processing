@@ -1,13 +1,14 @@
-## Create env
+## 1. Create and activate the env
 
 ```bash
 python3 -m venv .venv
+source .venv/bin/activate
 ```
 
-## Activate env
+## Install all dependencies at once
 
 ```bash
-source .venv/bin/activate
+pip install -r requirments.txt
 ```
 
 ## Loading the image

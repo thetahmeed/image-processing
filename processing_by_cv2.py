@@ -1,4 +1,3 @@
-# Way 1: Loading the image
 import cv2
 image = cv2.imread("images/color_image.png")
 
