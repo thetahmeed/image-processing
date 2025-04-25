@@ -38,27 +38,49 @@ python3 equalization.py
 
 ### Enhancement using Cv2:
 
+#### 1. cropped_image
+
 ![cropped_image](https://github.com/thetahmeed/image-processing/blob/main/output/cv2/cropped_image.png?raw=true)
+
+#### 2. gray_image
 
 ![gray_image](https://github.com/thetahmeed/image-processing/blob/main/output/cv2/gray_image.png?raw=true)
 
+#### 3. log_transformed_image
+
 ![log_transformed_image](https://github.com/thetahmeed/image-processing/blob/main/output/cv2/log_transformed_image.png?raw=true)
+
+#### 4. negative_image
 
 ![negative_image](https://github.com/thetahmeed/image-processing/blob/main/output/cv2/negative_image.png?raw=true)
 
+#### 5. piecewise_transformed_image
+
 ![piecewise_transformed_image](https://github.com/thetahmeed/image-processing/blob/main/output/cv2/piecewise_transformed_image.png?raw=true)
+
+#### 6. power_law_transformed_image
 
 ![power_law_transformed_image](https://github.com/thetahmeed/image-processing/blob/main/output/cv2/power_law_transformed_image.png?raw=true)
 
-![Enhancement using Cv2 resized_image_244x244](https://github.com/thetahmeed/image-processing/blob/main/output/cv2/resized_image_244x244.png?raw=true)
+#### 7. resized_image_244x244
 
-![Enhancement using Cv2 threshold_image](https://github.com/thetahmeed/image-processing/blob/main/output/cv2/threshold_image.png?raw=true)
+![resized_image_244x244](https://github.com/thetahmeed/image-processing/blob/main/output/cv2/resized_image_244x244.png?raw=true)
+
+#### 8. threshold_image
+
+![threshold_image](https://github.com/thetahmeed/image-processing/blob/main/output/cv2/threshold_image.png?raw=true)
 
 ### Enhancement using Pillow:
 
+#### 1. cropped_image
+
 ![cropped_image](https://github.com/thetahmeed/image-processing/blob/main/output/pillow/cropped_image.jpg?raw=true)
 
+#### 2. hsv_image
+
 ![hsv_image](https://github.com/thetahmeed/image-processing/blob/main/output/pillow/hsv_image.jpg?raw=true)
+
+#### 3. resized_image_244x244
 
 ![resized_image_244x244](https://github.com/thetahmeed/image-processing/blob/main/output/pillow/resized_image_244x244.jpg?raw=true)
 
