@@ -8,7 +8,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-## Install all dependencies
+## Install dependencies
 
 ```bash
 pip install -r requirments.txt
@@ -28,5 +28,6 @@ python3 processing_by_pillow.py
 python3 equalization.py
 ```
 
-Pillow:
-https://pillow.readthedocs.io/en/latest/handbook/index.html
+[OpenCV documentation](https://docs.opencv.org/master/)
+
+[Pillow documentation](https://pillow.readthedocs.io/en/latest/handbook/index.html)
