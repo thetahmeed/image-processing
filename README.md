@@ -1,40 +1,32 @@
-## 1. Create and activate the env
+## Create and activate the env
 
 ```bash
 python3 -m venv .venv
+```
+
+```bash
 source .venv/bin/activate
 ```
 
-## Install all dependencies at once
+## Install all dependencies
 
 ```bash
 pip install -r requirments.txt
 ```
 
-## Loading the image
-
-## Way 1: Using OpenCV
-
-Supperts: PNG, JPG, TIFF, and BMP
+### Run
 
 ```bash
-pip install opencv-python
+python3 processing_by_cv2.py
 ```
-
-```py
-import cv2
-image = cv2.imread("images/COVID19(387).jpg")
-```
-
-## Way 2: Using OpenCV
-
-Support more like PSD, ICO, and WEBP
 
 ```bash
-pip install pillow
+python3 processing_by_pillow.py
 ```
 
-```py
-from PIL import Image
-image = Image.open("images/COVID19(387).jpg")
+```bash
+python3 equalization.py
 ```
+
+Pillow:
+https://pillow.readthedocs.io/en/latest/handbook/index.html
