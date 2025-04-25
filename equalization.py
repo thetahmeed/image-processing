@@ -7,7 +7,8 @@ img = cv.imread('images/COVID19(390).jpg', cv.IMREAD_GRAYSCALE)
 equ = cv.equalizeHist(img)
 res = np.hstack((img,equ)) # stacking images side-by-side
 cv.imwrite('output/equalization/histograms_equalization.png',res)
-
+# cv.imwrite('histograms_equalization.jpg',equ) 
+ 
 ### CLAHE (Contrast Limited Adaptive Histogram Equalization)
 clahe = cv.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
 cl1 = clahe.apply(img)
