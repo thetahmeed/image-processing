@@ -50,14 +50,14 @@ def apply_histogram_equalization(source_path, dest_dir):
         equ = cv.equalizeHist(img)
         
         # Create comparison image (original and equalized side by side)
-        res = np.hstack((img, equ))
+        # res = np.hstack((img, equ))
         
         # Generate output filename - keep original name
         base_name = os.path.basename(img_path)
         output_path = os.path.join(dest_dir, base_name)
         
         # Save image
-        cv.imwrite(output_path, res)
+        cv.imwrite(output_path, equ)
         processed_count += 1
         
         # Print progress
@@ -117,14 +117,14 @@ def apply_clahe_equalization(source_path, dest_dir, clip_limit=2.0, tile_grid_si
         cl1 = clahe.apply(img)
         
         # Create comparison image (original and equalized side by side)
-        res = np.hstack((img, cl1))
+        # res = np.hstack((img, cl1))
         
         # Generate output filename - keep original name
         base_name = os.path.basename(img_path)
         output_path = os.path.join(dest_dir, base_name)
         
         # Save image
-        cv.imwrite(output_path, res)
+        cv.imwrite(output_path, cl1)
         processed_count += 1
         
         # Print progress
@@ -134,6 +134,6 @@ def apply_clahe_equalization(source_path, dest_dir, clip_limit=2.0, tile_grid_si
 
 # Call histogram equalization function as requested
 if __name__ == "__main__":
-    source_path = '/Users/tahmeed/Developer/Projects/Thesis/Data Sets/COVID19_Pneumonia_Normal_Chest_Xray_PA_Dataset/pneumonia'
-    dest_dir = '/Users/tahmeed/Developer/Projects/Thesis/Data Sets/COVID19_Pneumonia_Normal_Chest_Xray_PA_Dataset/pneumonia-after-histogram-equalization'
-    apply_clahe_equalization(source_path, dest_dir)
+    source_path = '/Users/tahmeed/Developer/Projects/Thesis/image-processing/before-equlization'
+    dest_dir = '/Users/tahmeed/Developer/Projects/Thesis/image-processing/after-equalization/histogram'
+    apply_histogram_equalization(source_path, dest_dir)
