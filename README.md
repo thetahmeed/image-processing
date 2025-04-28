@@ -14,6 +14,13 @@ source .venv/bin/activate
 pip3 install -r requirments.txt
 ```
 
+## For compariasm
+
+```bash
+pip3 install numpy
+pip3 install matplotlib
+```
+
 ### Run
 
 ```bash
