@@ -87,8 +87,3 @@ plt.axis('off')
 plt.tight_layout()
 print("Displaying images...")
 plt.show()
-
-# Save the result
-output_path = "images/denoised_result.png"
-cv2.imwrite(output_path, iqr_denoised_image)
-print(f"Saved denoised image to: {output_path}")
