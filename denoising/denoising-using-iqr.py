@@ -6,7 +6,7 @@ import time
 from tqdm import tqdm  # For progress bar
 
 # Check image path and load the noisy image
-image_path = "images/COVID19(153).jpg"
+image_path = "images/noisy_image_2.png"
 print(f"Looking for image at: {os.path.abspath(image_path)}")
 
 if not os.path.exists(image_path):
@@ -87,3 +87,9 @@ plt.axis('off')
 plt.tight_layout()
 print("Displaying images...")
 plt.show()
+
+# Save the denoised image
+output_path = "output/denoised_image_using_iqr.png"
+cv2.imwrite(output_path, iqr_denoised_image)
+print(f"Denoised image saved at: {output_path}")
+

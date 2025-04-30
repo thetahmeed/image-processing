@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import cv2
 
 # Load a grayscale image and add random noise
-image = cv2.imread(cv2.samples.findFile("images/COVID19(153).jpg"), cv2.IMREAD_GRAYSCALE)
+image = cv2.imread(cv2.samples.findFile("images/noisy_image_2.png"), cv2.IMREAD_GRAYSCALE)
 image = cv2.resize(image, (256, 256))  # Resize for faster processing
 
 # Add Gaussian noise
@@ -49,3 +49,6 @@ plt.axis('off')
 
 plt.tight_layout()
 plt.show()
+
+# Save the denoised image
+cv2.imwrite("output/denoised_image_using_wavelet.png", denoised_image)
