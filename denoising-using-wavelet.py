@@ -18,7 +18,8 @@ wavelet = 'coif1' # 'db8', 'sym4', or 'coif1'
 coeffs = pywt.wavedec2(image, wavelet, level=2)
 
 # Thresholding - soft thresholding
-threshold = 10
+# threshold = 10
+threshold = np.median(np.abs(coeffs[1][0])) / 0.6745  # universal threshold
 coeffs_thresh = list(coeffs)
 coeffs_thresh[1:] = [(pywt.threshold(cH, threshold, mode='soft'),
                       pywt.threshold(cV, threshold, mode='soft'),
